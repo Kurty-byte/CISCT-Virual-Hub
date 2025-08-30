@@ -39,7 +39,7 @@ CISC V-Hub is a desktop application acting as an academic organizer, communicati
 ### Key Backend Folders
 
 - `apps/`: Modular Django apps for each system feature.
-- `core/`: Project configuration, settings, URL routing, and server entry points (`asgi.py`, `wsgi.py`).
+- `config/`: Project configuration, settings, URL routing, and server entry points (`asgi.py`, `wsgi.py`).
 - `common/`: Shared constants, exceptions, services, and utilities.
 - `middleware/`: Custom middleware for request/response processing (e.g., logging, authentication).
 - `api/`: API-specific logic, such as permission classes.
@@ -48,34 +48,95 @@ CISC V-Hub is a desktop application acting as an academic organizer, communicati
 
 ## System Modules
 
-V-Hub includes modules for:
-- User Profile & Resume
-- Faculty-Classroom System (Internal LMS)
-- Academic Schedule & Organizer
-- Academic Progress Tracker
-- Student Organization Directory & Membership
-- Organization Event Lifecycle & Attendance
-- CISC Calendar System
-- Announcement Board & News Feed
-- Internal Messaging & Inquiry Center
-- House Management & Points System
-- Faculty Appointment & Consultation Scheduler
-- Document Vault & Form Repository
-- Suggestion, Complaint, & Feedback Box
-- Project & Competition Showcase
-- Student Services & External Link Directory
-- Admin Insights Dashboard
+Below are the modules included in the CISC Virtual Hub. Modules are grouped according to their business logic to help organize the system and make it easier to understand for all contributors.
+- Academics
+  - Faculty-Classroom System (Internal LMS)
+  - Academic Progress Tracker
+  - Academic Schedule & Organizer
+- Announcements
+  - Announcement Board & News Feed
+- Appointments
+  - Faculty Appointment & Consultation Scheduler
+- Calendar
+  - CISC Calendar System
+- Dashboard
+  - Admin Insights Dashboard
+- Documents
+  - Document Vault & Form Repository
+- Feedback
+  - Suggestion, Complaint, & Feedback Box
+- House
+  - House Management & Points System
+- Links
+  - Student Services & External Link Directory
+- Messaging
+  - Internal Messaging & Inquiry Center
+- Organizations
+  - Student Organization Directory & Membership
+  - Organization Event Lifecycle & Attendance
+- Showcase
+  - Project & Competition Showcase
+- Users
+  - User Profile & Resume
 
 ## Tools and Technologies
 
-- **Python 3.10+**: Main programming language for backend and desktop frontend.
-- **Django**: Backend framework for APIs and logic.
-- **Django REST Framework**: For building RESTful APIs.
-- **PyQt6**: Desktop GUI framework.
+- **Python 3.11.9**: Main programming language for backend and desktop frontend.
+- **Django 5.2.5**: Backend framework for APIs and logic.
+- **Django REST Framework 3.16.1**: For building RESTful APIs.
+- **PyQt6 6.9.1**: Desktop GUI framework.
+- **PyQt6-Qt6 6.9.1**: Qt6 bindings for PyQt6.
+- **PyQt6_sip 13.10.2**: SIP bindings for PyQt6.
+- **psycopg2-binary 2.9.10**: PostgreSQL database adapter for Python.
+- **requests 2.32.5**: HTTP library for API communication.
 - **Qt Designer**: For designing GUI layouts.
 - **PostgreSQL**: Main production database.
 - **SQLite3**: Local development database.
-- **Other Libraries**: Matplotlib (visualization), Requests, python-dotenv, etc.
+- **Other Libraries**: Matplotlib (visualization), python virtual environment etc.
+
+## Contributors
+**Backend**
+- Pulmones, Jan Marc
+- Endino, Michaela RJ Kate
+- Campomanes, Ethan
+- Montecillo, Jopur Jay
+- Ruaya, Jairuz
+- Bongo, Seth Laurence
+- Velasco, Kurt Vincent
+- Cervantes, Aaron Clyde
+- Magdaraog, Emanuel
+- Cuarteros, Dionne James
+- Sanchez, Jan Eduard
+- Lauretto, Christian Edward
+- Gonzaga, Krismar
+- Balindong, Salman
+- Brigoli, Boon Jefferson
+
+**Frontend**
+- Importante, Mark
+- Velasco, Shauntie
+- Villarino, Victory Kyle
+- Gulmatico, John Renz
+- Salise, Yuri
+- Araneta, Gabriel
+- Montecillo, Dale Zurich
+- Bontuyan, Earlryd
+- Dulay, Andre Louie
+- Manangkila, Khent
+- Nacua, Sebastian
+- Jumao-as, Sertin Jay
+- Cutillar, Rod Andro
+
+**Design**
+- Jugos, King Jan Paul
+- Jacobe, Roshan
+- Sosobrado, Marc Christian
+- Salapang, Earl
+- Oinal, Babylyn
+- Belandres, Jogn Harley
+- Pinatacan, John Rio
+- Castro, Carlos
+- Gonzales, Kian Mark
 
 ## Setup
 
