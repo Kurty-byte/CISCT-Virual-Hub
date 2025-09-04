@@ -41,8 +41,20 @@ INSTALLED_APPS = [
     # API 
     'rest_framework',
 
-    # Put your apps here
-    
+    # Local apps
+    'apps.Users',
+    'apps.Academics',
+    'apps.Announcements',
+    'apps.Appointments',
+    'apps.Calendar',
+    'apps.Dashboard',
+    'apps.Documents',
+    'apps.Feedback',
+    'apps.House',
+    'apps.Links',
+    'apps.Messaging',
+    'apps.Organizations',
+    'apps.Showcase',
 ]
 
 MIDDLEWARE = [
