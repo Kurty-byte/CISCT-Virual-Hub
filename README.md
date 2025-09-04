@@ -28,7 +28,7 @@ CISC V-Hub is a desktop application acting as an academic organizer, communicati
 ## Architecture
 
 - **Backend (`backend/`)**:  
-	Built with Django, the backend provides RESTful APIs, business logic, and data management. It includes modular apps for each feature (Academics, Announcements, Appointments, etc.), a core configuration, shared utilities, middleware, and API permissions.
+	Built with Django, the backend provides RESTful APIs, business logic, and data management. It includes modular apps for each feature (Academics, Announcements, Appointments, etc.), a config configuration, shared utilities, middleware, and API permissions.
 - **Frontend (`frontend/`)**:  
 	Developed using PyQt6, the desktop frontend interacts with the backend via APIs and provides a rich user interface. Qt Designer is used for GUI layouts.
 - **Database**:  
@@ -42,7 +42,6 @@ CISC V-Hub is a desktop application acting as an academic organizer, communicati
 - `config/`: Project configuration, settings, URL routing, and server entry points (`asgi.py`, `wsgi.py`).
 - `common/`: Shared constants, exceptions, services, and utilities.
 - `middleware/`: Custom middleware for request/response processing (e.g., logging, authentication).
-- `api/`: API-specific logic, such as permission classes.
 - `tests/`: Project-wide and app-specific tests.
 - `manage.py`: Django’s command-line utility for running the server, migrations, and other tasks.
 
@@ -128,6 +127,7 @@ Below are the modules included in the CISC Virtual Hub. Modules are grouped acco
 - Cutillar, Rod Andro
 
 **Design**
+- Castro, Carlos
 - Jugos, King Jan Paul
 - Jacobe, Roshan
 - Sosobrado, Marc Christian
@@ -135,7 +135,6 @@ Below are the modules included in the CISC Virtual Hub. Modules are grouped acco
 - Oinal, Babylyn
 - Belandres, Jogn Harley
 - Pinatacan, John Rio
-- Castro, Carlos
 - Gonzales, Kian Mark
 
 ## Setup
@@ -148,3 +147,4 @@ Below are the modules included in the CISC Virtual Hub. Modules are grouped acco
 	 `python backend/manage.py migrate`
 5. Start the server:  
 	 `python backend/manage.py runserver`
+
