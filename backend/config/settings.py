@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     # Local apps
     'apps.Users',
     'apps.Academics',
+    'apps.Admin',
     'apps.Announcements',
     'apps.Appointments',
     'apps.Calendar',
